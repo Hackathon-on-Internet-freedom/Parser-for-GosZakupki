@@ -44,7 +44,6 @@ class Database:
     def connection(self) -> Connection:
         if self._connection is None:
             self._connection = self.engine.connect()
-            print(type(self.connection))
         return self._connection
 
     def _build_engine(self) -> Engine:
@@ -62,6 +61,4 @@ class Database:
         return pd.read_sql(query, self.connection)
 
 
-
-
-
+DB = Database()

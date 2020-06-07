@@ -1,6 +1,7 @@
+/k8s
 /data/
 /db/
-/visuals/connection/credentials.ini
+*/credentials.ini
 
 # PyCharm
 .idea
@@ -143,3 +144,4 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+/app/backend/connection/credentials.ini
